@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passwortschutz</title>
+
+    <link rel="stylesheet" href="../css/cssreset.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+
+    <script src="../js/password.js"></script>
+  </head>
+
+  <body>
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-8 order-md-1 text-center text-md-left pr-md-5">
+          <h1 class="mb-3">Javascript Aufgaben</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="../index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+              <a class="nav-item nav-link active" href="./Passwortschutz.html"
+                >Passwortschutz</a
+              >
+              <a class="nav-item nav-link" href="./Taschenrechner.html"
+                >Taschenrechner</a
+              >
+              <a class="nav-item nav-link" href="./Verschluesselung.html"
+                >Verschluesselung</a
+              >
+              <a class="nav-item nav-link" href="./TodoApp.html">Todo App</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="row">
+        <h2>Passwortschutz</h2>
+      </div>
+
+      <div class="row">
+        <div class="col" >
+          
+            <form class="form-signin">
+              <img
+                class="mb-4"
+                src="https://nzpocketguide.com/wp-content/uploads/2019/10/Hole-in-the-Rock-Bay-of-Islands_optimized.jpg"
+                alt="Hole-in-the-Rock-Bay-of-Islands"
+                height="150"
+              />
+              <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+              <label class="sr-only">User</label>
+              <input
+                id="user"
+                class="form-control"
+                placeholder="User"
+                required=""
+                autofocus=""
+              />
+              <label class="sr-only">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Password"
+                required=""
+              />
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" /> Remember me
+                </label>
+              </div>
+              <button
+                class="btn btn-lg btn-primary btn-block"
+                type="submit"
+                onclick="signIn()"
+              >
+                Sign in
+              </button>
+              <p class="mt-5 mb-3 text-muted">© 2017-2020</p>
+            </form>
+          </div>
+
+          <div class="col" >
+
+            <img src="../image/ThumbsUp.jpg" class="img-fluid" alt="Thums Up" id="loggedIn" hight="200px" visibility: hidden;>
+           
+            <p  class="emoji" with="700px"   >&#128077;</p>
+
+            
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
