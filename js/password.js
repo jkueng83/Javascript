@@ -1,14 +1,58 @@
+var showImage = false;
+
+function initPage(){
+
+    showImageFunktion();
+}
+
+
+
 function signIn() {
     var user = document.getElementById("user").value;
     var password = document.getElementById("password").value;
+   
+    
 
-    if (user == "Johannes" && password == "1111"){
-        alert("Sign in OK");
+    if ((user === "Johannes") && (password === "1111")){
+       
+        show();
+        //console.log("singIn")
+        //alert("Sign in OK");
 
-        document.getElementById("loggedIn").hidden = "false";
+         showImage = true;
 
+
+        
     }else{
-        alert("Sing in error! Try again!");
+        //alert("Sing in error! Try again!");
+
+        hide();
+        showImage = false;
+        
+
+
     }
-  
+    
+}
+
+
+
+function showImageFunktion(){
+
+    if(showImage){
+        show();
+    } else{
+        hide()
+    }
+
+}
+
+
+
+function hide(){
+    document.getElementById("loggedIn").style.visibility = "hidden";
+}
+
+function show(){
+    document.getElementById("loggedIn").style.visibility = "visible";
 }

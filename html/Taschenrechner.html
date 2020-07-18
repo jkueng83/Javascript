@@ -7,6 +7,16 @@
     <title>Vereinshomepage Test JKueng</title>
     <link rel="stylesheet" href="../css/cssreset.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+
+    <style>
+
+.buttonSice{
+  width: 3rem;
+  height: 3rem;
+}
+
+    </style>
+    <script src="../js/calculator.js"></script>
   </head>
 
   <body>
@@ -53,5 +63,272 @@
         </nav>
       </div>
     </div>
+
+
+
+    <div class="container-xl">
+     
+
+      
+
+      <div class="row-cols-md-2 ">
+        
+        <div class="col-12">
+          Rechner
+          <p></p>
+          Alle Berechnungen sind ohen gewähr!
+          <p></p>
+
+          <output
+            type="text"
+            class="alert alert-secondary"
+            role="alert"
+            id="calculationString"
+            >?</output>
+
+          <output type="text" class="alert alert-secondary" role="alert"
+            >=
+          </output>
+
+          <output
+            type="text"
+            class="alert alert-secondary"
+            role="alert"
+            id="calculationResult"
+            >?</output>
+
+          <div
+            class="btn-toolbar"
+            role="toolbar"
+            aria-label="Toolbar with button groups"
+          >
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="First group">
+              <button type="button" class="btn btn-secondary" onclick="resetField()">
+                C
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Second group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation('(')"
+              >
+                (
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Third group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(')')"
+              >
+                )
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Forth group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation('/')"
+              >
+                /
+              </button>
+            </div>
+          </div>
+
+          <p></p>
+
+          <div
+            class="btn-toolbar"
+            role="toolbar"
+            aria-label="Toolbar with button groups"
+          >
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="First group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(7)"
+              >
+                7
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Second group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(8)"
+              >
+                8
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Third group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(9)"
+              >
+                9
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Forth group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation('*')"
+              >
+                *
+              </button>
+            </div>
+
+          </div>
+          
+          <p></p>
+
+          <div
+            class="btn-toolbar"
+            role="toolbar"
+            aria-label="Toolbar with button groups"
+          >
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="First group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(4)"
+              >
+                4
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Second group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(5)"
+              >
+                5
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Third group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(6)"
+              >
+                6
+              </button>
+            </div>
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Forth group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation('-')"
+              >
+                -
+              </button>
+            </div>
+          </div>
+
+          <p></p>
+
+          <div
+            class="btn-toolbar"
+            role="toolbar"
+            aria-label="Toolbar with button groups"
+          >
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="First group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(1)"
+              >
+                1
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Second group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(2)"
+              >
+                2
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Third group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(3)"
+              >
+                3
+              </button>
+            </div>
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Forth group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation('+')"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <p></p>
+
+          <div
+            class="btn-toolbar"
+            role="toolbar"
+            aria-label="Toolbar with button groups"
+          >
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="First group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation(0)"
+              >
+                0
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Second group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addToCalculation('.')"
+              >
+                .
+              </button>
+            </div>
+
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Third group">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="makeCalculation('=')"
+              >
+                =
+              </button>
+            </div>
+            <div class="btn-group mr-2 buttonSice" role="group" aria-label="Forth group">
+              <button type="button" class="btn btn-secondary"></button>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+
+
   </body>
 </html>

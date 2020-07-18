@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <title>Vereinshomepage Test JKueng</title>
+    <title>Verschlüsselung</title>
+    
     <link rel="stylesheet" href="../css/cssreset.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+    <script src="../js/Verschluesselung.js"></script>
   </head>
 
   <body>
@@ -52,6 +53,30 @@
           </div>
         </nav>
       </div>
+
+      <div class="row">
+
+        <div class="col">
+          <h1>Unverschlüsselt</h1>
+          <textarea  name="unverschluesseltName" id="unverschluesseltId" cols="30" rows="10"  ></textarea>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-secondary" onclick="encrypt()"> Verschlüsseln </button>
+          <p></p>
+          <button type="button" class="btn btn-secondary" onclick="decrypt()"> Entschlüsseln </button>
+        </div>
+        <div class="col">
+         <h1>Verschlüsselt</h1>
+         <textarea name="verschluesseltName" id="verschluesseltId" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+
+
+
+      
+
+
+
     </div>
   </body>
 </html>
