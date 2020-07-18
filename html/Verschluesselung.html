@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verschlüsselung</title>
-    
+
     <link rel="stylesheet" href="../css/cssreset.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
     <script src="../js/Verschluesselung.js"></script>
@@ -14,7 +14,7 @@
     <div class="container-xl">
       <div class="row">
         <div class="col-md-8 order-md-1 text-center text-md-left pr-md-5">
-          <h1 class="mb-3"> Javascript Aufgaben </h1>
+          <h1 class="mb-3">Javascript Aufgaben</h1>
         </div>
       </div>
 
@@ -34,7 +34,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link " href="../index.html"
+              <a class="nav-item nav-link" href="../index.html"
                 >Home <span class="sr-only">(current)</span></a
               >
               <a class="nav-item nav-link" href="./Passwortschutz.html"
@@ -46,37 +46,45 @@
               <a class="nav-item nav-link active" href="./Verschluesselung.html"
                 >Verschluesselung</a
               >
-              <a class="nav-item nav-link" href="./TodoApp.html"
-                >Todo App</a
-              >
+              <a class="nav-item nav-link" href="./TodoApp.html">Todo App</a>
             </div>
           </div>
         </nav>
       </div>
 
       <div class="row">
-
-        <div class="col">
+        <div class="col-md">
           <h1>Unverschlüsselt</h1>
-          <textarea  name="unverschluesseltName" id="unverschluesseltId" cols="30" rows="10"  ></textarea>
+          <textarea
+            name="unverschluesseltName"
+            id="unverschluesseltId"
+            cols="40"
+            rows="10"
+          ></textarea>
         </div>
         <div class="col-2">
-          <button type="button" class="btn btn-secondary" onclick="encrypt()"> Verschlüsseln </button>
+          <button type="button" class="btn btn-secondary" onclick="encrypt()">
+            Verschlüsseln
+          </button>
           <p></p>
-          <button type="button" class="btn btn-secondary" onclick="decrypt()"> Entschlüsseln </button>
+          <button type="button" class="btn btn-secondary" onclick="decrypt()">
+            Entschlüsseln
+          </button>
         </div>
-        <div class="col">
-         <h1>Verschlüsselt</h1>
-         <textarea name="verschluesseltName" id="verschluesseltId" cols="30" rows="10"></textarea>
+        <div class="col-md">
+          <h1>Verschlüsselt</h1>
+          <textarea
+            name="verschluesseltName"
+            id="verschluesseltId"
+            cols="40"
+            rows="10"
+          ></textarea>
         </div>
       </div>
+    </div>
 
-
-
-      
-
-
-
+    <div class="card text-center">
+      <footer class="card-footer text-muted">by Johannes Küng</footer>
     </div>
   </body>
 </html>

@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
 
     <style>
-
-      .hideImage{
- visibility: hidden;
+      .hideImage {
+        visibility: hidden;
       }
-         </style>
+    </style>
 
     <script src="../js/password.js"></script>
-    
   </head>
 
   <body onload="initPage()">
@@ -66,73 +64,86 @@
       </div>
 
       <div class="row">
-        <div class="col" >
-          
-            <form class="form-signin">
-              <img
-                class="mb-4"
-                src="https://nzpocketguide.com/wp-content/uploads/2019/10/Hole-in-the-Rock-Bay-of-Islands_optimized.jpg"
-                alt="Hole-in-the-Rock-Bay-of-Islands"
-                height="150"
-              />
-              <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-              <label class="sr-only">User</label>
-              <input
+        <div class="col">
+          <form class="form-signin">
+            <img
+              class="mb-4"
+              src="https://nzpocketguide.com/wp-content/uploads/2019/10/Hole-in-the-Rock-Bay-of-Islands_optimized.jpg"
+              alt="Hole-in-the-Rock-Bay-of-Islands"
+              height="150"
+            />
+            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+            <label class="sr-only">User</label>
+            <input
               type="text"
-                id="user"
-                class="form-control"
-                placeholder="User"
-                required=""
-                autofocus=""
-              />
-              <label class="sr-only">Password</label>
-              <input
-                type="password"
-                id="password"
-                class="form-control"
-                placeholder="Password"
-                required=""
-              />
-              <!-- 
+              id="user"
+              class="form-control"
+              placeholder="User"
+              required=""
+              autofocus=""
+            />
+            <label class="sr-only">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Password"
+              required=""
+            />
+            <!-- 
               <div class="checkbox mb-3">
                 <label>
                   <input type="checkbox" value="remember-me" /> Remember me
                 </label>
               </div>
               -->
-              <p></p>
-              <button
-               
+            <p></p>
+            <button
               class="btn btn-lg btn-primary btn-block"
-              type="submit" 
-                onclick="signIn()"
-              >
-                Sign in
-              </button>
+              type="submit"
+              onclick="signIn()"
+            >
+              Sign in
+            </button>
 
-              <p></p>
-              <button type="button" id="hideButton" class="btn btn-primary" onclick="hide()">hide</button>
-              <button type="button" id="showButton" class="btn btn-primary" onclick="show()">show</button>
+            <p></p>
+            <button
+              type="button"
+              id="hideButton"
+              class="btn btn-primary"
+              onclick="hide()"
+            >
+              hide
+            </button>
+            <button
+              type="button"
+              id="showButton"
+              class="btn btn-primary"
+              onclick="show()"
+            >
+              show
+            </button>
 
-              <p class="mt-5 mb-3 text-muted">© 2017-2020</p>
-            </form>
-          </div>
+            <p class="mt-5 mb-3 text-muted">© 2017-2020</p>
+          </form>
+        </div>
 
-          <div class="col" >
+        <div class="col">
+          <output>Die Anzeige fonktioniert noch nicht richtig</output>
+          <img
+            src="../image/ThumbsUp.jpg"
+            alt="Thumbs Up"
+            id="loggedIn"
+            hight="200px"
+          />
 
-            <output>Die Anzeige fonktioniert noch nicht richtig</output>
-            <img src="../image/ThumbsUp.jpg" alt="Thumbs Up" id="loggedIn" hight="200px"  >
-           
-            <p  class="emoji" with="700px"   >&#128077;</p>
-
-            
-
-            
+          <p class="emoji" with="700px">&#128077;</p>
         </div>
       </div>
     </div>
 
-    <span id="showstate"></span>
-
+    <div class="card text-center">
+      <footer class="card-footer text-muted">by Johannes Küng</footer>
+    </div>
   </body>
 </html>
