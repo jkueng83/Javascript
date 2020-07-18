@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <title>Vereinshomepage Test JKueng</title>
+    <title>Todo App</title>
+
     <link rel="stylesheet" href="../css/cssreset.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+
+    <script src="../js/todo.js"></script>
   </head>
 
   <body>
@@ -55,6 +57,39 @@
 
       <div class="row">
         <h2>Todo App</h2>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-secondary" onclick="addTask()">
+            Aufgabe ergänzen  -- zum testen
+          </button>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div class="row">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Neue Aufgabe eingeben"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+            id="newTask"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              onclick="addTask()"
+            >
+              Speichern
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
