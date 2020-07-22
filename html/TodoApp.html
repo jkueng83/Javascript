@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo App</title>
+    <title>ToDo App</title>
 
     <link rel="stylesheet" href="../css/cssreset.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
@@ -47,8 +47,8 @@
               <a class="nav-item nav-link" href="./Verschluesselung.html"
                 >Verschluesselung</a
               >
-              <a class="nav-item nav-link active" href="./TodoApp.html"
-                >Todo App</a
+              <a class="nav-item nav-link active" href="./ToDoApp.html"
+                >ToDo App</a
               >
             </div>
           </div>
@@ -56,20 +56,38 @@
       </div>
 
       <div class="row">
-        <h2>Todo App</h2>
+        <h2>ToDo App</h2>
       </div>
 
       <div class="row">
         <div class="col">
           <button type="button" class="btn btn-secondary" onclick="addTask()">
-            Aufgabe ergänzen  -- zum testen
+            Aufgabe ergänzen -- zum testen
           </button>
         </div>
       </div>
 
       <p></p>
 
-      <div class="row">
+      <div class="row-cols-md-1">
+        <ul   id="toDoList">
+          <li class="alert alert-secondary" >1. Aufgabe</li>
+        </ul>
+
+       
+      </div>
+
+      <div class="custom-control custom-checkbox">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="same-address"
+        />
+        <label class="custom-control-label" for="same-address"
+          >erledigt -- der muss noch neben die Aufgabe</label
+        >
+      </div>
+      <div class="row-cols-md-1">
         <div class="input-group mb-3">
           <input
             type="text"
@@ -84,13 +102,17 @@
               class="btn btn-outline-secondary"
               type="button"
               id="button-addon2"
-              onclick="addTask()"
+              onclick="addToList()"
             >
-              Speichern
+              Zur ToDo-Liste ergänzen
             </button>
           </div>
         </div>
       </div>
+
+      
+
+      
     </div>
 
     <div class="card text-center">
