@@ -61,12 +61,45 @@
 
       <p></p>
 
+      <div class="form-row">
+        <div class="form-group col-md-10">
+          <label for="inputCity">Task</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+
       <div class="row-cols-md-1">
         <ul id="toDoList">
           <li class="alert alert-secondary">
             <input type="checkbox" aria-label="Checkbox" /> 1. Aufgabe
           </li>
+          
         </ul>
+
+        <div>
+
+          <div class="row  alert alert-secondary ">
+            <div class="col-md-10"> 2. Testaufgabe checkbox right </div>
+
+            <div class="col-md-2">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1">Done</label>
+            </div>
+          </div>
+          
+        </div>
+
       </div>
 
       <div class="row-cols-md-1">
