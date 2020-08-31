@@ -33,16 +33,24 @@ var obj = document.getElementById('list');
 }
 
 function addToList(){
-    var x = document.createElement("LI");
+    var liElement = document.createElement("LI");
     var inputText = document.getElementById("newTask").value;
     
     var t = document.createTextNode(inputText);
     
-    x.appendChild(t);
-    x.classList.add("alert");
-    x.classList.add("alert-secondary");
+    liElement.appendChild(t);
+    liElement.classList.add("row");
+    liElement.classList.add("alert");
+    liElement.classList.add("alert-secondary");
     
-    document.getElementById("toDoList").appendChild(x);
+    document.getElementById("toDoList").appendChild(liElement);
+    
+    deleteValueNewTask(); //document.getElementById("newTask").value = ""; // Eingabefeld wieder leeren
+}
 
+
+
+
+function deleteValueNewTask (){
     document.getElementById("newTask").value = ""; // Eingabefeld wieder leeren
 }
