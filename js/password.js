@@ -19,7 +19,7 @@ function signIn() {
         //console.log("singIn")
         //alert("Sign in OK");
 
-         showImage = true;
+        // showImage = true;
 
 
         
@@ -27,7 +27,7 @@ function signIn() {
         //alert("Sing in error! Try again!");
 
         hide();
-        showImage = false;
+        //showImage = false;
         
 
 

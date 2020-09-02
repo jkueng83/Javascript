@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="../css/cssreset.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css"/>
     <script src="../js/Verschluesselung.js"></script>
   </head>
 
@@ -53,7 +54,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md">
+        <div class="col-lg-4">
           <h1>Unverschlüsselt</h1>
           <textarea
             name="unverschluesseltName"
@@ -62,16 +63,16 @@
             rows="10"
           ></textarea>
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-secondary" onclick="encrypt()">
+        <div class="col-lg-4 " >
+          <button type="button" class="btn btn-secondary btn-block" onclick="encrypt()">
             Verschlüsseln
-          </button>
+          </button> 
           <p></p>
-          <button type="button" class="btn btn-secondary" onclick="decrypt()">
+          <button type="button" class="btn btn-secondary btn-block"  onclick="decrypt()">
             Entschlüsseln
           </button>
         </div>
-        <div class="col-md">
+        <div class="col-lg-4">
           <h1>Verschlüsselt</h1>
           <textarea
             name="verschluesseltName"
