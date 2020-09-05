@@ -7,12 +7,9 @@
 
     <link rel="stylesheet" href="../css/cssreset.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
-
-    <script src="../js/todo.js"></script>
   </head>
 
   <body>
-    <div>Die Setite befindet schich in Arbeit!</div>
     <div class="container-xl">
       <div class="row">
         <div class="col-md-8 order-md-1 text-center text-md-left pr-md-5">
@@ -72,6 +69,7 @@
           </div>
         </div>
         <ul id="toDoList">
+          <!--  Für das Layout das HTML erstllt - wir jetzt mit Java Script gefüllt  
           <li class="row alert alert-secondary">
             
             <span class="col-md-10">1. Aufgabe - Testaufgabe</span>
@@ -79,6 +77,9 @@
               <input type="checkbox" aria-label="Checkbox" /> Done
             </div>
           </li>
+
+          
+
           <li class="row alert alert-secondary">
             
             <span class="col-md-10"
@@ -91,9 +92,8 @@
               <input type="checkbox" aria-label="Checkbox" /> Done
             </div>
           </li>
+          -->
         </ul>
-
-        
       </div>
 
       <div class="row-cols-md-1">
@@ -111,7 +111,7 @@
               class="btn btn-outline-secondary"
               type="button"
               id="button-addon2"
-              onclick="addToList()"
+              onclick="addTask()"
             >
               Zur ToDo-Liste ergänzen
             </button>
@@ -141,5 +141,7 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+
+    <script src="../js/todo.js"></script>
   </body>
 </html>
