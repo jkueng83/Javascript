@@ -74,10 +74,10 @@ function getTaskList() {
 
     html +=
       "<li class='row alert alert-secondary'>" +
-      "<span class='col-md-10'> " +
+      "<span class='col-10'> " +
       element.description +
       "</span> " +
-      " <div class='col-md_2'> " +
+      " <div class='col-2'> " +
       " <input type='checkbox' aria-label='Checkbox'" +
       checked +
       " data-index='" +
