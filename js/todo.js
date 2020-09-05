@@ -84,8 +84,7 @@ function getTaskList() {
       index +
       "' " +
       " onclick='markTask(this)'" +
-      " /> Done " +
-      " </div> " +
+      " />Done</div> " +
       " </li> ";
 
     index++;

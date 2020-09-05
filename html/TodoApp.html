@@ -69,7 +69,7 @@
         </div>
       </div>
       <ul id="toDoList">
-        <!--  Für das Layout das HTML erstllt - wir jetzt mit Java Script gefüllt  
+        <!--  Für das Layout das HTML erstellt - wir jetzt mit Java Script gefüllt  
           <li class="row alert alert-secondary">
             
             <span class="col-md-10">1. Aufgabe - Testaufgabe</span>
@@ -96,38 +96,37 @@
       </ul>
       <!-- </div> -->
 
-      <div class="row alert ">
-        <div class="input-group cal-10">
+      <div class="row alert">
+        <div class="col-10">
           <input
             type="text"
             class="form-control"
-            placeholder="Neue Aufgabe eingeben"
-           
+            placeholder="Task Eingabe"
             id="newTask"
           />
-          <div class="input-group-append col-2">
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              onclick="addTask()"
-            >
-              Zur Liste ergänzen 
-            </button>
-          </div>
+        </div>
+        <div class="col-2">
+          <button
+            type="button"
+            class="btn btn-outline-secondary "
+            onclick="addTask()"
+          >
+            Task ergänzen
+          </button>
         </div>
       </div>
 
       <p></p>
 
-      <div class="row alert ">
-        <div class="col-10">  </div>
+      <div class="row alert">
+        <div class="col-10"></div>
         <div class="col-2">
           <button
             class="btn btn-success"
             type="button"
             onclick="deleteDoneTasks()"
           >
-            Erledigte ToTo's enttfernen
+            Erledigte Tasks entfernen
           </button>
         </div>
       </div>
