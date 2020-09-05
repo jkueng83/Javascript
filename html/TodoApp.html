@@ -60,16 +60,16 @@
       <p></p>
 
       <!-- <div class="container-xl"> -->
-        <div class="row alert alert-info">
-          <div class="col-10">
-            <label for="inputCity">ToDo's</label>
-          </div>
-          <div class="col-2">
-            <label for="inputState">Done</label>
-          </div>
+      <div class="row alert alert-info">
+        <div class="col-10">
+          <label for="inputCity">ToDo's</label>
         </div>
-        <ul id="toDoList">
-          <!--  Für das Layout das HTML erstllt - wir jetzt mit Java Script gefüllt  
+        <div class="col-2">
+          <label for="inputState">Done</label>
+        </div>
+      </div>
+      <ul id="toDoList">
+        <!--  Für das Layout das HTML erstllt - wir jetzt mit Java Script gefüllt  
           <li class="row alert alert-secondary">
             
             <span class="col-md-10">1. Aufgabe - Testaufgabe</span>
@@ -93,29 +93,42 @@
             </div>
           </li>
           -->
-        </ul>
+      </ul>
       <!-- </div> -->
 
-      <div class="row">
+      <div class="row alert ">
         <div class="input-group cal-10">
           <input
             type="text"
             class="form-control"
             placeholder="Neue Aufgabe eingeben"
-            aria-label="Recipient's username"
-            aria-describedby="button-addon2"
+           
             id="newTask"
           />
-          <div class="input-group-append cal-2">
+          <div class="input-group-append col-2">
             <button
               class="btn btn-outline-secondary"
               type="button"
-              id="button-addon2"
               onclick="addTask()"
             >
-              Zur ToDo-Liste ergänzen
+              Zur Liste ergänzen 
             </button>
           </div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div class="row alert ">
+        <div class="col-10">  </div>
+        <div class="col-2">
+          <button
+            class="btn btn-success"
+            type="button"
+            onclick="deleteDoneTasks()"
+          >
+            Erledigte ToTo's enttfernen
+          </button>
         </div>
       </div>
 
@@ -124,8 +137,6 @@
         <footer class="card-footer text-muted">by Johannes Küng</footer>
       </div>
     </div>
-
-    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

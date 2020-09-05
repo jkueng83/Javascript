@@ -110,3 +110,23 @@ function markTask(element) {
     tasks[index].isDone = false;
   }
 }
+
+function deleteDoneTasks() {
+  let updatedTasks = [];
+
+  tasks.forEach((element) => {
+    if (!element.isDone) {
+      updatedTasks.push(element);
+    }
+  });
+
+  while (tasks.length > 0) {
+    tasks.pop();
+  }
+
+  for (let index = 0; index < updatedTasks.length; index++) {
+    tasks.push(updatedTasks[index]);
+  }
+
+  printTaskList();
+}
