@@ -111,20 +111,30 @@ function markTask(element) {
 }
 
 function deleteDoneTasks() {
-  let updatedTasks = [];
-
-  tasks.forEach((element) => {
-    if (!element.isDone) {
-      updatedTasks.push(element);
+  if (true) {
+    // so ist es schöner
+    for (let index = tasks.length - 1; index >= 0; index--) {
+      if (tasks[index].isDone) {
+        tasks.splice(index, 1);
+      }
     }
-  });
+  } else {
+    // 1. Lösung
+    let updatedTasks = [];
 
-  while (tasks.length > 0) {
-    tasks.pop();
-  }
+    tasks.forEach((element) => {
+      if (!element.isDone) {
+        updatedTasks.push(element);
+      }
+    });
 
-  for (let index = 0; index < updatedTasks.length; index++) {
-    tasks.push(updatedTasks[index]);
+    while (tasks.length > 0) {
+      tasks.pop();
+    }
+
+    for (let index = 0; index < updatedTasks.length; index++) {
+      tasks.push(updatedTasks[index]);
+    }
   }
 
   printTaskList();

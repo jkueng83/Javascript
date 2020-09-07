@@ -11,11 +11,12 @@ function signIn() {
     var user = document.getElementById("user").value;
     var password = document.getElementById("password").value;
    
-    
+    deleteLogInData()
 
     if ((user === "Johannes") && (password === "1111")){
        
         show();
+        setLogStatus("logged in")
         //console.log("singIn")
         //alert("Sign in OK");
 
@@ -35,6 +36,12 @@ function signIn() {
     
 }
 
+function deleteLogInData(){
+    document.getElementById("user").value = "";
+    password = document.getElementById("password").value = "";
+
+}
+
 
 
 function showImageFunktion(){
@@ -47,12 +54,29 @@ function showImageFunktion(){
 
 }
 
+function signOut(){
+    hide();
+    setLogStatus("logged out")
+
+
+}
 
 
 function hide(){
     document.getElementById("loggedIn").style.visibility = "hidden";
+    
+
 }
 
 function show(){
     document.getElementById("loggedIn").style.visibility = "visible";
+   
+    
+}
+
+function setLogStatus( status){
+
+    document.getElementById("logStatus").innerHTML = status;
+
+
 }
